@@ -1,8 +1,8 @@
 // webcomponent
 
 const menuItemTemplate = (name: string) => String.raw`
-  <li class="menu-list-item d-flex items-center py-2">
-    <span class="w-100 pl-2 menu-name">${name}</span>
+  <li id="menu-list-item" class="menu-list-item d-flex items-center py-2">
+    <span id="menu-name" class="w-100 pl-2 menu-name">${name}</span>
     <button
       type="button"
       id="menu-edit-button"
