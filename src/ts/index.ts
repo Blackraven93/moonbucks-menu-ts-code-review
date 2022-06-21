@@ -1,11 +1,9 @@
 import '../css/index.css';
 
-import { Event } from './Controller/Event';
+import Menu from './Controller/Menu';
 
 const init = () => {
-  const event = new Event();
-
-  event.init();
+  new Menu();
 };
 
 init();
