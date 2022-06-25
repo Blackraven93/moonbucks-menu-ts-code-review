@@ -15,10 +15,13 @@ class MenuCounter extends Controller {
   }
 
   change(menuList: HTMLUListElement) {
-    const reg = /[0-9]/g;
-
-    this.menuCount.textContent &&
-      (this.menuCount.textContent = this.menuCount.textContent?.replace(reg, String(menuList.children.length)));
+    const reg = /[0-9]+/g;
+    if (this.menuCount.textContent) {
+      this.menuCount.textContent = this.menuCount.textContent.replace(
+        reg,
+        String(menuList.children.length)
+      );
+    }
   }
 }
 
